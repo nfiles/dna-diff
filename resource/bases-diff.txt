@@ -1,0 +1,13 @@
+Input file: C:\Users\FilesNW1\Desktop\DNA_diff\dna_diff\bases.txt
+
+Gen. 1   1     ACGAGTACGACGATCGATCGATTCTTATGCGAGGCGCGCGCGGGGGATATAATTATACGA   60
+               ||||| || |||| ||| |||  | |    ||||||||||||||||||||||||||||||
+Gen. 2   1     ACGAGGACCACGAGCGAGCGAGGCATGCTTGAGGCGCGCGCGGGGGATATAATTATACGA   60
+
+Gen. 1   61    TCATGGACTAGCTA                                                 74
+               ||||||||||||||
+Gen. 2   61    TCATGGACTAGCTA                                                 74
+
+Length of nitrogenous base sequence: 74
+Number of Differences: 11
+Percent different: 14.8649%
