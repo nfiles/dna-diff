@@ -4,8 +4,24 @@
       "follow_symlinks": true,
       "path": ".",
       "file_exclude_patterns": [
-        "*.sublime-*"
+        "*.sublime-*",
+        "*.gch"
       ]
+    }
+  ],
+  "build_systems": [
+    {
+      "name": "build",
+      "selector": "cpp.source",
+      "cmd": [
+        "make"
+      ],
+      "windows": {
+        "cmd": [
+          "mingw32-make"
+        ],
+        "path": "C:\\MinGW\\bin"
+      }
     }
   ]
 }
