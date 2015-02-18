@@ -1,0 +1,32 @@
+flags:
+    -r --rna
+        Accept RNA (Uracil)
+    -f --format
+        specify format
+        blast (Blast-style output)
+        columns
+
+
+class DnaDiff {
+public:
+    DnaDiff(inputfilename, outputfilename);
+
+    string input_filename;
+    string output_filename;
+
+    void   setRNA(bool);
+    void   setBlast(bool);
+    string getResults();
+
+    struct DnaDiffSettings {
+        RNA
+        BLAST
+        inputfilename
+        outputfilename
+    };
+private:
+    // settings
+    bool _RNA;
+    bool _BLAST;
+    enum BASECODES;
+}

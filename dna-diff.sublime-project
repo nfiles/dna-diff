@@ -12,16 +12,33 @@
   "build_systems": [
     {
       "name": "build",
-      "selector": "cpp.source",
+      "selector": "source.c++",
       "cmd": [
         "make"
       ],
+      "working_dir": "$project_path",
       "windows": {
         "cmd": [
           "mingw32-make"
         ],
-        "path": "C:\\MinGW\\bin"
-      }
+        "path": "C:\\MinGW\\bin;C:\\MinGW\\msys\\1.0\\bin"
+      },
+      "variants": [
+        {
+          "name": "clean",
+          "cmd": [
+            "make",
+            "clean"
+          ],
+          "windows": {
+            "cmd": [
+              "mingw32-make",
+              "clean"
+            ],
+            "path": "C:\\MinGW\\bin;C:\\MinGW\\msys\\1.0\\bin"
+          }
+        }
+      ]
     }
   ]
 }
