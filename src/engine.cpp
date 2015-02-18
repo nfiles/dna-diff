@@ -59,7 +59,7 @@ Result Engine::CompareDna(const string &strand1, const string &strand2,
         }
     }
 
-    // TODO: set the valid bases
+    // set the valid bases
     result.valid_bases = _rna ? RNA_BASES : DNA_BASES;
 
     return result;
